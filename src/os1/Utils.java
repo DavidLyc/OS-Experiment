@@ -5,9 +5,9 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Utils {
+class Utils {
 
-    public static List<Job> getJobFromFile() {
+    static List<Job> getJobFromFile() {
         List<Job> jobList = new ArrayList<>();
         String pathname = "C:\\Users\\宇成童鞋\\IdeaProjects\\Test\\src\\os1\\1.txt";
         File filename = new File(pathname);
