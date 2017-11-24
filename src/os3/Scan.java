@@ -7,7 +7,7 @@ public class Scan {
     public static void start() {
         System.out.println("扫描算法（SCAN，电梯算法）");
         List<Disk> diskList = Util.getDisksFromFile();
-        int start = 53;
+        int start = 30;
         int totalDistance = Math.abs(start - getMinDiskNum(diskList))
                 + Math.abs(getMinDiskNum(diskList) - getMaxDiskNum(diskList));
         System.out.println(totalDistance);
