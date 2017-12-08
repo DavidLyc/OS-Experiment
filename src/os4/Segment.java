@@ -2,11 +2,19 @@ package os4;
 
 public class Segment {
 
+    private int processID;
     private int segmentID;      //段号
     private int start;    //始地址
     private int length;   //段长
-    private int method;   //存取方式
-    private int status;   //状态位
+
+    Segment(int processID) {
+        this.processID = processID;
+    }
+
+    Segment(int start, int length) {
+        this.start = start;
+        this.length = length;
+    }
 
     public int getSegmentID() {
         return segmentID;
@@ -32,20 +40,8 @@ public class Segment {
         this.length = length;
     }
 
-    public int getMethod() {
-        return method;
-    }
-
-    public void setMethod(int method) {
-        this.method = method;
-    }
-
-    public int getStatus() {
-        return status;
-    }
-
-    public void setStatus(int status) {
-        this.status = status;
+    public int getProcessID() {
+        return processID;
     }
 
 }
